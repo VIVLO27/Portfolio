@@ -104,10 +104,4 @@
   "retina_detect": true
 
 }
-[
-  {
-    "title": "Smart City Reporting System",
-    "description": "Web application to report city issues using HTML, CSS, JavaScript.",
-    "image": "images/smart-city.png"
-  }
-]
+
