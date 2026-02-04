@@ -178,3 +178,16 @@ contactForm.addEventListener("submit", (e) => {
 
   contactForm.reset();
 });
+fetch("data/projects.json")
+  .then(res => res.json())
+  .then(projects => {
+    projects.forEach(p => {
+      document.querySelector("#projects").innerHTML += `
+        <article>
+          <h3>${p.title}</h3>
+          <p>${p.description}</p>
+          <img src="${p.image}" alt="${p.title} project screenshot">
+        </article>
+      `;
+    });
+  });
